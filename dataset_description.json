@@ -13,7 +13,14 @@
     "Acknowledgements": "Yoshiharu Ikutani prepared and uploaded the dataset in BIDS format",
     "HowToAcknowledge": "",
     "Funding": [
-        "JST ERATO Grant Number JPMJER1801"
+        "JST ERATO Grant Number JPMJER1801",
+        "JSPS KAKENHI Grant Number JP15H05311",
+        "JSPS KAKENHI Grant Number JP16H05857",
+        "JSPS KAKENHI Grant Number JP16H06569",
+        "JSPS KAKENHI Grant Number JP17H01797",
+        "JSPS KAKENHI Grant Number JP18K18108",
+        "JSPS KAKENHI Grant Number JP18K18141",
+        "JSPS KAKENHI Grant Number JP18J22957"
     ],
     "ReferencesAndLinks": [
         ""
