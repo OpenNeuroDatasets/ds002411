@@ -1,0 +1,37 @@
+# Decoding functional category of source code from the brain (fMRI on Java program comprehension)
+
+## Original paper
+
+TODO: write arXiv(?) URL of the paper here.
+
+## Overview
+
+In this study, fMRI data was recorded while subjects were categorizing source code snippets into one of four functional categories. The experiment consisted of six separate runs (36 trials plus one dummy trial for each run) and a total of 72 Java code snippets were each presented three times. In each trial, a Java code snippet was displayed for ten seconds after a fixation-cross presentation for two seconds. Then, subjects classified the given code snippet into one of four category classes within four seconds by pressing a button. We recruited top- and middle-rated programmers as well as novice controls to cover a wide range of programming expertise using programmers' rate in the competitive programming contest 'AtCoder'. fMRI data in each subject were used to train and evaluate models (decoders) to predict functional category or subcategory of seen Java code snippets. Searchlight-based decoding accuracies were assessed to identify the brain regions that contribute expert programmers' outstanding performances on program comprehension.
+
+Source code for preprocessing and analyses is available at GitHub (TODO: write repository URL here).
+
+## Dataset
+
+### MRI files
+
+This dataset contains fMRI data from twenty-nine subjects ('sub-01', 'sub-02', ..., 'sub-29'). Each subject data contains anatomical and functional MRI data. Functional scans were collected over six scanning runs.
+
+The functional EPI scans covered the entire brain (TR, 2000 ms; TE, 30 ms; flip angle, 75°; voxel size, 2 × 2 × 2.01 mm; FOV, 192 × 192 mm; slice gap, 0 mm). The dataset also includes a T1-weighted anatomical reference image for each subject (TR, 2530 ms; TE, 3.26 ms; flip angle, 9°; voxel size, 1.0 × 1.0 × 1.0 mm; FOV, 256 × 256 mm). The T1-weighted images were scanned only once for each subject. The T1-weighted images were defaced using mri_deface (<https://surfer.nmr.mgh.harvard.edu/fswiki/mri_deface>). All DICOM files are converted to Nifti by dcm2niix (version v1.0.20190902).
+
+Note: We used MRI data from thirty subjects in the original paper. Twenty-nine subjects approved to open their MRI data to the public but one subject declined. Thus, we published the MRI data only from subjects who approved to make it open.
+
+### Subject information
+
+The subject information file ('participants.tsv') denote the background information of each subject (age, sex, handedness, etc.). You can find what each column of the subject information files represents in './participants.json'. 
+
+### Task event files
+
+Task event files (‘sub-\*_func_task-ProgramCategorization_run-\*_events.tsv’) denote recorded event (stimuli code, subject responses, etc.) during fMRI runs. You can find what each column of the task event files represents in './task-ProgramCategorization_events.json'. 
+
+### Java code snippets as the experimental stimuli
+
+Java code snippets used in the study were stored in the stimuli directory ('./stimuli'). They were collected from an open codeset provided by AIZU ONLINE JUDGE (<http://judge.u-aizu.ac.jp/onlinejudge/>) and preprocessed by the authors to normalize indentation styles and names of user-defined functions. The 'stim_file' column in the task event files indicate one of the Java code snippets in the stimuli directory to specify which code snippet was used in each trial of the experiment.
+
+## Contact
+
+- Email: <takatomi-k@is.naist.jp>
