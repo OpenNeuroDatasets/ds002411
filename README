@@ -2,13 +2,14 @@
 
 ## Original paper
 
-TODO: write arXiv(?) URL of the paper here.
+Y. Ikutani, T. Kubo, S. Nishida, H. Hata, K. Matsumoto, K. Ikeda, and S. Nishimoto, "Expert programmers have fine-tuned cortical representations of source code", 2020. (Preprint is available at https://www.biorxiv.org/content/10.1101/2020.01.28.923953v1 )
 
 ## Overview
 
 In this study, fMRI data was recorded while subjects were categorizing source code snippets into one of four functional categories. The experiment consisted of six separate runs (36 trials plus one dummy trial for each run) and a total of 72 Java code snippets were each presented three times. In each trial, a Java code snippet was displayed for ten seconds after a fixation-cross presentation for two seconds. Then, subjects classified the given code snippet into one of four category classes within four seconds by pressing a button. We recruited top- and middle-rated programmers as well as novice controls to cover a wide range of programming expertise using programmers' rate in the competitive programming contest 'AtCoder'. fMRI data in each subject were used to train and evaluate models (decoders) to predict functional category or subcategory of seen Java code snippets. Searchlight-based decoding accuracies were assessed to identify the brain regions that contribute expert programmers' outstanding performances on program comprehension.
 
-Source code for preprocessing and analyses is available at GitHub (TODO: write repository URL here).
+Source code for preprocessing and analyses is available from our GitHub repository.
+https://github.com/Yoshiharu-Ikutani/DecodingCodeFromTheBrain
 
 ## Dataset
 
