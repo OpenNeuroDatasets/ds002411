@@ -1,0 +1,19 @@
+{
+    "onset": "onset time of an event [sec]",
+    "duration": "duration of the event [sec]",
+    "trial_no": "trial number of the event",
+    "event_type": {
+    	"Description": "type of the event",
+    	"Levels": {
+    		"dummy_trial": "dummy trial to avoid MRI signal instability; should be removed in the analysis",
+    		"baseline": "a fixation-cross presentation indicating trial changes",
+    		"source_code": "a Java code snippe presentation for 10 seconds",
+    		"response": "input a responce to indicate which functional category does the given Java snippet belong to"
+    	}
+    },
+    "stim_file": "file name of Java code snippet used in the trial",
+    "category": "correct functional category of the Java code snippet",
+    "subcategory": "correct functional subcategory of the Java code snippet",
+    "response": "a response input by the subject",
+    "correctness": "correctness of the subjects' response"
+}
