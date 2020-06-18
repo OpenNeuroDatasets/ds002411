@@ -1,0 +1,12 @@
+{
+    "Modality": "MR",
+    "Manufacturer": "Siemens",
+    "ManufacturersModelName": "Prisma",
+    "InstitutionName": "CiNet",
+    "InstitutionalDepartmentName": "kansai",
+    "InstitutionAddress": "Yamadaoka_1-4_Suita-shi_Osaka_JP_565-0871",
+    "DeviceSerialNumber": "66083",
+    "TaskName": "ProgramCategorization",
+    "ConversionSoftware": "dcm2niix",
+    "ConversionSoftwareVersion": "v1.0.20190902"
+}
